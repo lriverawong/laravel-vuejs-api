@@ -26,4 +26,14 @@ class Signature extends Model
     {
         return $this->update(['flagged_at' => \Carbon\Carbon::now()]);
     }
+
+    /**
+     * Get the user Gravatar by their email address.
+     *
+     * @return string   
+     */
+    public function getAvatarAttribute()
+    {
+        return sprintf('https://www.gravatar.com/avatar/%s?s=100', md5($this->email));
+    }
 }
