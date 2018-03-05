@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Root of website
+Route::get('/', 'SignaturesController@index')->name('home');
+
+// GET: /sign This page is responsible for displaying the form for creating a new signature.
+Route::get('sign', 'SignaturesController@create')->name('sign');

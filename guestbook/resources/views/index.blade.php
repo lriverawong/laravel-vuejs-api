@@ -1,0 +1,1 @@
+<signatures></signatures> <!-- In index.blade.php -->
