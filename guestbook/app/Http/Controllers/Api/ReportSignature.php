@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers\Api;
 
-use Illuminate\Http\Request;
+// use Illuminate\Http\Request;
+use App\Signature;
 use App\Http\Controllers\Controller;
 
 class ReportSignature extends Controller
